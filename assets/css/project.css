@@ -1,23 +1,21 @@
-html[data-theme = 'light']
-{
+html[data-theme="light"] {
   --bg-col: #fafafa;
   --shadow1: rgba(0, 0, 0, 0.3);
   --shadow2: rgba(0, 0, 0, 0.2);
 }
 
-html[data-theme = 'dark']
-{
+html[data-theme="dark"] {
   --bg-col: black;
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
 }
 
 /*For Changing background color of body according to theme*/
-body{
+body {
   background: var(--bg-col) !important;
 }
 
-.img-header{
+.img-header {
   width: 90%;
   height: 90%;
 }
@@ -26,20 +24,20 @@ a:hover {
   text-decoration: none;
 }
 
-.skill-card{
-	border: none;
+.skill-card {
+  border: none;
 }
 
-.row{
+.row {
   display: flex;
   row-gap: 3em;
 }
 
-.card{
+.card {
   width: 100%;
 }
 
-.column{
+.column {
   float: left;
   margin-bottom: 2rem;
 }
@@ -50,23 +48,22 @@ a:hover {
   /* margin: 1rem auto; */
 }
 
-@media(min-width: 60rem)
-{
-  .row{
+@media (min-width: 60rem) {
+  .row {
     margin-top: 0em;
   }
 
-  .card{
+  .card {
     width: 43%;
     column-gap: 3rem;
     margin: 0 2rem;
     transition: width 0.8s;
   }
 
-  .card:hover{
-    width:45%;
+  .card:hover {
+    width: 45%;
   }
-  .column{
+  .column {
     margin-left: 1.5rem;
   }
 }
@@ -111,12 +108,11 @@ a:hover {
   bottom: 0;
   width: 100%;
   transition: transform 0.3s;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
 }
 
-@media(min-width: 60rem)
-{
-  .card .data{
+@media (min-width: 60rem) {
+  .card .data {
     height: 66%;
   }
 }
@@ -128,36 +124,32 @@ a:hover {
   margin-bottom: 4em;
 }
 
-@media(min-width: 378px)
-{
-  .card .data .content{
+@media (min-width: 378px) {
+  .card .data .content {
     margin-bottom: 1em;
   }
 }
 
-@media(min-width: 400px)
-{
-  .card .data .content{
+@media (min-width: 400px) {
+  .card .data .content {
     margin-bottom: 2em;
   }
 }
 
-@media(min-width: 60rem)
-{
-  .card .data .content{
+@media (min-width: 60rem) {
+  .card .data .content {
     margin-bottom: 0;
   }
 }
 
-.card .title-div{
+.card .title-div {
   width: 100%;
   height: 25%;
   margin: 0;
 }
 
-@media(min-width: 60rem)
-{
-  .card .title-div{
+@media (min-width: 60rem) {
+  .card .title-div {
     padding-bottom: 2.3rem;
   }
 }
@@ -167,33 +159,31 @@ a:hover {
   font-size: 0.65em;
 }
 
-@media(min-width: 311px)
-{
-  .card .title{
+@media (min-width: 311px) {
+  .card .title {
     font-size: 0.8em;
   }
 }
 
-@media(min-width: 365px){
-  .card .title{
+@media (min-width: 365px) {
+  .card .title {
     font-size: 1em;
   }
 }
 
-@media(min-width: 425px){
-  .card .title{
+@media (min-width: 425px) {
+  .card .title {
     font-size: 1.3em;
   }
 }
 
-@media(min-width: 554px){
-  .card .title{
+@media (min-width: 554px) {
+  .card .title {
     font-size: 1.5em;
   }
 }
 
-@media(min-width: 60rem)
-{
+@media (min-width: 60rem) {
   .card .title {
     font-size: 1.55em;
   }
@@ -205,41 +195,40 @@ a:hover {
   margin: 0;
 }
 
-@media(min-width: 311px){
-  .card .text{
+@media (min-width: 311px) {
+  .card .text {
     font-size: 0.7;
   }
 }
 
-@media(min-width: 365px){
-  .card .text{
+@media (min-width: 365px) {
+  .card .text {
     font-size: 0.85em;
   }
 }
 
-@media(min-width: 425px){
-  .card .text{
+@media (min-width: 425px) {
+  .card .text {
     font-size: 1em;
   }
 }
 
-@media(min-width: 554px)
-{
-  .card .text{
+@media (min-width: 554px) {
+  .card .text {
     font-size: 1.2em;
   }
 }
 
-@media(min-width: 60rem){
-  .card .text{
+@media (min-width: 60rem) {
+  .card .text {
     font-size: 18px;
   }
 }
 
-.tagbutton{
+.tagbutton {
   background-color: lawngreen;
   border-radius: 10px;
-  border:none;
+  border: none;
 }
 .card input[type="checkbox"] {
   display: none;
@@ -249,8 +238,8 @@ a:hover {
   transform: translateY(-60px);
 }
 
-input[type="text"]{
-  color:rgb(235, 148, 35);
+input[type="text"] {
+  color: rgb(235, 148, 35);
 }
 
 .skill-card .wrapper:hover .menu-content span {
@@ -337,20 +326,175 @@ input[type="text"]{
 }
 
 @media (max-width: 800px) {
-	.skill-card .data {
-		transform: translateY(calc(0px));
-	  }
+  .skill-card .data {
+    transform: translateY(calc(0px));
   }
+}
 
 @media (max-width: 377px) {
-	.skill-card .data {
-		transform: translateY(calc(90px + 4em));
-	  }
+  .skill-card .data {
+    transform: translateY(calc(90px + 4em));
   }
-  @media (min-width: 960px) {
-    .skill-card .data {
-      color: #fff;
-      transform: translateY(calc(80px + 4em));
-      padding: 5px;
-    }
+}
+@media (min-width: 960px) {
+  .skill-card .data {
+    color: #fff;
+    transform: translateY(calc(80px + 4em));
+    padding: 5px;
+  }
+}
+
+.mycarousel {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul.slides input {
+  display: none;
+}
+
+.slide-container {
+  display: block;
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.slide-image img {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+}
+
+.mycarousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.mycarousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .mycarousel-controls label {
+  opacity: 0.5;
+}
+
+.mycarousel-controls label:hover {
+  opacity: 1;
+}
+
+.mycarousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+.mycarousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+.mycarousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.mycarousel-dots .mycarousel-dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .mycarousel-controls label {
+  display: block;
+}
+
+input#img-1:checked ~ .mycarousel-dots label#img-dot-1,
+input#img-2:checked ~ .mycarousel-dots label#img-dot-2,
+input#img-3:checked ~ .mycarousel-dots label#img-dot-3,
+input#img-4:checked ~ .mycarousel-dots label#img-dot-4,
+input#img-5:checked ~ .mycarousel-dots label#img-dot-5,
+input#img-6:checked ~ .mycarousel-dots label#img-dot-6 {
+  opacity: 1;
+}
+
+input:checked + .slide-container .nav label {
+  display: block;
+}
+
+.mycontainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+.box1,
+.box2 {
+  height: auto;
+  float: left;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.box1 {
+  width: 600px;
+  clear: left;
+  margin-right: 10px;
+}
+.box2 {
+  width: 400px;
+  border: 1px solid #afafaf;
+}
+.clear {
+  clear: both;
 }
