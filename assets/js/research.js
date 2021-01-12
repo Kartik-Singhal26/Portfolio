@@ -24,7 +24,7 @@ const research = [
     {
         title : "IoT Applications in the Pharmaceutical Industry",
         authors : "Deepak Kumar Sharma, Saakshi Bhargava and Kartik Singhal",
-        conferences : "Chapter 6 - Internet of Things applications in the pharmaceutical industry - Elsevier",
+        conferences : "Chapter 6: Internet of Things applications in the pharmaceutical industry - Elsevier",
         Status : "Published",
         researchYr : 2020,
         citebox : "#popup2",
@@ -34,7 +34,7 @@ const research = [
     {
         title : "Fuzzy Systems in Medicine and Healthcare: Need, Challenges, and Applications",
         authors : "Deepak K. Sharma, Sakshi, Kartik Singhal",
-        conferences : "Chapter 8: Soft Computing Applications and Techniques in Healthcare",
+        conferences : "Chapter 8: Soft Computing Applications and Techniques in Healthcare - CRC Press",
         Status : "Published",
         researchYr : 2020,
         citebox : "#popup3",
