@@ -43,7 +43,7 @@ particlesJS('particles-js', {
 			random: true,
 			anim: {
 				enable: false,
-				speed: 10,
+				speed: 2,
 				size_min: 10,
 				sync: false
 			}
