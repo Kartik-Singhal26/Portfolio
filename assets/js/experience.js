@@ -1,29 +1,15 @@
 //  Work experience cards
 
 
-const experiencecards = document.querySelector(".experience-cards");
+const internshipcards = document.querySelector(".internships-cards");
 const exp = [
   {
-    title: "Software Development Intern",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
-  },
-  {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
-  },
-  {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
-    desp:"<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
-  },
+    title: "Product Development Intern",
+    cardImage: "assets/images/experience-page/ORT.png",
+    place: "Omnipresent Robot Technologies",
+    time: "Delhi, India | September, 2020 - December, 2020",
+    desp: "<li>Worked on ideation, CAD modelling and prototyping for UV Sanitization Devices.</li> <li>Co-ordinated manufacturing, documentation, BOM preparation and procurements for the prototypes</li> <li>Designed CAD models for a multicoptor drone assembly with a adjustable wing locking mechanism.</li>",
+  }
 ];
 
 const showCards2 = () => {
@@ -52,112 +38,74 @@ const showCards2 = () => {
     </ul>
       `)
   );
-  experiencecards.innerHTML = output;
+  internshipcards.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards2);
 
 
-// Volunteership Cards
+// Research Intern Cards
 
-const volunteership = document.querySelector(".volunteership");
-const volunteershipcards = [
+const Researchinternshipcards = document.querySelector(".Researchinternships-cards");
+const Researchinternship = [
   {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/1.jpg",
-    description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+    lab: "Centre for Application of Information Technology in Financial Systems",
+    Institute: "Netaji Subhas Institute of Technology, Delhi, India",
+    Supervisor: "Supervisor: Prof. Deepak Kumar Sharma",
+    time: "| May, 2020 - Present",
+    RA: "Research Areas: Predictive Maintenance, Cyber-Physical Systems, Deep Learning, Time Series Forecasting",
+    desp: "We are working with datasets from operations of industrial machines or cyber-physical systems to develop predictive maintenance techniques using recurrent neural networks. Time series forecasting is done to analyse operative behaviour on the basis of collected features to 'predict' failures before they can occur or detect anomalies during operations.",
   },
   {
-    title: "StudentCode-in 2020",
-    cardImage: "assets/images/experience-page/2.jpg",
-    description:
-      "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
+    lab: "Advanced Process Control Lab",
+    Institute: "Netaji Subhas Institute of Technology, Delhi, India",
+    Supervisor: "Supervisors: Prof. Vineet Kumar, Prof. K.P.S. Rana",
+    time: "| October, 2019 - Present",
+    RA: "Research Areas: Mobile Robots, Control Systems, Optimization Techniques, Fuzzy Logic Theory",
+    desp: "We studied performances of various non-lnear PID controllers and developed adaptive controllers utilizing Fuzzy Logic Theory and optimization techniques for control of non - holonomic mobile robots. Next step is to design real robots and try control of hardware under actual physical constraints.",
   },
   {
-    title: "PClub Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/3.jpg",
-    description:
-      "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
-  },
-  {
-    title: "Hakin-Codes",
-    cardImage: "assets/images/experience-page/4.jpg",
-    description:
-      "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
-  },
-  {
-    title: "30 DaysofFlutter",
-    cardImage: "assets/images/experience-page/5.jpg",
-    description:
-      "Helping beginners from their first steps in Flutter to building fully functional cross-platform applications.",
-  },
-  {
-    title: "Garuda Hacks",
-    cardImage: "assets/images/experience-page/6.jpg",
-    description:
-      "MLH sponsored Indonesia's premier Global Virtual Hackathon on 14 - 16th August 2020.",
-  },
-];
-
-const showCards = () => {
-  let output = "";
-  volunteershipcards.forEach(
-    ({ title, cardImage, description }) =>
-      (output += `        
-      <div class="card volunteerCard" style="background-image: url(${cardImage});background-repeat: no-repeat, repeat; background-size: cover; background-position: center;">
-      <div class="content">
-          <h2 class="volunteerTitle">${title}</h2>
-          <p class="copy">${description}</p></div>
-      </div>
-      `)
-  );
-  volunteership.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", showCards);
-
-
-// Mentorship Card
-
-
-const mentorshipcards = document.querySelector(".mentorship-cards");
-const mentor = [
-  {
-    title: "HakinCode",
-    image: "assets/images/experience-page/hakin.png",
-    time: "06/2020 - 08/2020",
-    desp: "<li>It is an open source community where students and mentors can apply.</li><hr /><li>Ample amount of technologies and projects are there and we are given opportunity to work on them according to our interest and knowledge.</li>",
-  },
-  {
-    title: "Google Summer of Code",
-    image: "assets/images/experience-page/gsoc.png",
-    time: "03/2020 - 08/2020",
-    desp: "<li>Google Summer of Code is a global program focused on introducing students to open source software development.</li><hr /><li>It is a great platform to explore new areas, maybe discover a new career path!</li>",
-  },
+    lab: "Centre for Advanced Production and Industrial Engineering Research ",
+    Institute: "Delhi Technological University, Delhi, India",
+    Supervisor: "Supervisor: Prof. Ranganath M. Singari",
+    time: "| May, 2019 - October, 2019",
+    RA: "Research Areas: Fuzzy Logic Theory, Irrigation Systems, Photogrammetry, 3D Printing ",
+    desp: "We prepared an arduino based irrigation system based on Fuzzy Logic to control water flow and timings. (This intern was my first introduction to the initially dreaded and now loved Fuzzy Logic Theory.) Since, I also visited Department of Design, DTU during this period, I got the chance to try the FDM printer there. Mainly we explored using 2D photos of physical models to construct 3D Printable meshes without the need of any CAD modelling.",
+  }
 ];
 
 const showCards3 = () => {
   let output = "";
-  mentor.forEach(
-    ({ title, image, time, desp}) =>
+  Researchinternship.forEach(
+    ({ lab, Institute, Supervisor, time, desp, RA }) =>
       (output += `        
-      <div class="column mentorshipCard"> 
-      <div class="card card2">
-        <img src="${image}" class="card-img-top" alt="..."  width="64" height="300">
-        <div class="information">
-        <div class="card-body">
-          <h5 class="card-title">${title}</h5>
-          <p class=""sub-title">${time}</p>
-        </div>
-        <div class="more-information">
-        <ul class="list-group list-group-flush p-0 right-aligned">
-          <div class="list-group-item card2 disclaimer">${desp}</div>
-        </ul>
-        </div>
-        </div>
-      </div>
-      </div>
+      <ul>
+      <li class="card card1">
+        <article class="card-body">
+          <header>
+            <div class="title">
+              <h3>${lab}</h3>
+            </div>
+            <p class="meta">
+              <span class="pre-heading">${Supervisor}</span><br>
+              <span class="cite">${Institute}</span>
+              <span class="author">${time}</span>
+            </p>
+            <br>
+            <br>
+            <p>
+              ${desp}
+            </p>
+            <p class="meta">
+            <br>
+            <span class="author">${RA}</span>
+            </p>
+          </header>
+        </article>
+      </li>
+    </ul>
       `)
   );
-  mentorshipcards.innerHTML = output;
+  Researchinternshipcards.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", showCards3);
+
