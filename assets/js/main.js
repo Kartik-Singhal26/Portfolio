@@ -102,9 +102,6 @@ let footer = $(`
           <center><img src="assets/images/Kartik1.png"style="width: 220px;"/></center>
         </a>
         <div class="simple-text text-center dark padding-sm">
-          <p >
-            "Develop a passion for learning. If you do, you will never cease to grow."
-          </p>
         <div class="empty-space xs-25 sm-25"></div>
       </div>
     </div>
@@ -123,7 +120,7 @@ let footer = $(`
   </div>
 
   <div class="col-10 text-center">
-  <p><a href=" " class="col-sm-12 text-white">contact@johndoe.com</a></p>
+  <p><a href=" " class="col-sm-12 text-white">kartiksinghal35@gmail.com</a></p>
   </div>
 
   </div>

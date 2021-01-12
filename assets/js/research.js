@@ -12,75 +12,43 @@ const citeTable8 = document.querySelector(".citeT8");
 
 const research = [
     {
-        title : "A Batch Normalized Inference Network Keeps the KL Vanishing Away",
-        authors : "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
+        title : "Robust Trajectory Tracking Control of Non-Holonomic Wheeled Mobile Robots using an Adaptive Fractional Order Parallel Fuzzy PID Controller",
+        authors : "Kartik Singhal, Vineet Kumar, K.P.S Rana",
+        conferences : "Journal of the Franklin Institute - Elsevier",
+        Status : "Publication Under Review",
         researchYr : 2020,
         citebox : "#popup1",
-        image : "assets/images/research-page/inteferenceNetwork.png"
+        image : "assets/images/research-page/caif.png"
     },
 
     {
-        title : "A Call for More Rigor in Unsupervised Cross-lingual Learning",
-        authors : "Mikel Artetxe, Sebastian Ruder, Dani Yogatama, Gorka Labaka and Eneko Agirre",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
+        title : "IoT Applications in the Pharmaceutical Industry",
+        authors : "Deepak Kumar Sharma, Saakshi Bhargava and Kartik Singhal",
+        conferences : "Chapter 6 - Internet of Things applications in the pharmaceutical industry - Elsevier",
+        Status : "Published",
         researchYr : 2020,
         citebox : "#popup2",
-        image : "assets/images/research-page/crossLingual.png"
+        image : "assets/images/research-page/els.jpg"
     },
 
     {
-        title : "A Comprehensive Analysis of Preprocessing for Word Representation Learning in Affective Tasks",
-        authors : "Nastaran Babanejad, Ameeta Agrawal, Aijun An and Manos Papagelis",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
+        title : "Fuzzy Systems in Medicine and Healthcare: Need, Challenges, and Applications",
+        authors : "Deepak K. Sharma, Sakshi, Kartik Singhal",
+        conferences : "Chapter 8: Soft Computing Applications and Techniques in Healthcare",
+        Status : "Published",
         researchYr : 2020,
         citebox : "#popup3",
-        image : "assets/images/research-page/wordRepresentation.png"
+        image : "assets/images/research-page/fuzzy.jpg"
     },
 
     {
-        title : "A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking",
-        authors : "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu and Jie Zhou",
-        conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
-        researchYr : 2020,
+        title : "Differentiation of Mamdani and Sugeno Fuzzy Inference System in developing Automatic Plant Watering Systems for Domestic Use",
+        authors : "Kartik Singhal, Rani Medhashree, Ranganath M. Singari",
+        conferences : "International Conference on Innovative & Advanced Multidisciplinary Research, Singapore",
+        Status : "Published",
+        researchYr : 2019,
         citebox : "#popup4",
-        image : "assets/images/research-page/dialogueState.png"
-    },
-
-    {
-        title : "Dual Super-Resolution Learning for Semantic Segmentation",
-        authors : "Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "#popup5",
-        image : "assets/images/research-page/semanticSegmentation.png"
-    },
-
-    {
-        title : "Deep Unfolding Network for Image Super-Resolution",
-        authors : "Zhang, Kai and Van Gool, Luc and Timofte, Radu",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "#popup6",
-        image : "assets/images/research-page/deepNetwork.png"
-    },
-
-    {
-        title : "Unsupervised Learning for Intrinsic Image Decomposition From a Single Image",
-        authors : "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "#popup7",
-        image : "assets/images/research-page/imageDecomposition.png"
-    },
-
-    {
-        title : "Forward and Backward Information Retention for Accurate Binary Neural Networks",
-        authors : "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song, Jingkuan",
-        conferences : "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-        researchYr : 2020,
-        citebox : "#popup8",
-        image : "assets/images/research-page/neuralNetworks.jpg"
+        image : "assets/images/research-page/model.png"
     }
 ];
 
@@ -127,7 +95,7 @@ const cite8 = [{
 const fillData = () => {
     let output = "";
     research.forEach(
-        ({image, title, authors, conferences, researchYr, citebox}) =>
+        ({image, title, authors, conferences, Status, researchYr, citebox}) =>
         (output +=`
             <tr> 
             <td class="imgCol"><img src="${image}" class="rImg"></td>
@@ -135,7 +103,7 @@ const fillData = () => {
             <div><span class="imgResponsive"><img src="${image}" class="imgRes"></span></div>
             <a href="#0" class="paperTitle"> ${title} </a> 
             <div> ${authors} </div> <div class="rConferences"> ${conferences} 
-            <div class="researchY">${researchYr}</div>
+            <div class="researchY">${Status} ${researchYr}</div>
             </div>
         
             <!--CITE BUTTON-->
