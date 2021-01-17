@@ -170,69 +170,6 @@ body {
   visibility: visible;
   opacity: 1;
 }
-.popup {
-  margin: 20px auto;
-  background: var(--cite-bg);
-  width: 50%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-.popup h5 {
-  margin-top: 0;
-  text-align: center;
-  color: var(--cite-col-txt);
-  background-color: var(--cite-head) !important;
-  padding: 8px;
-  position: sticky;
-  font-size: 1em;
-}
-.popup .close {
-  position: absolute;
-  right: 30px;
-  top: 5px;
-  transition: all 0.2s;
-  font-size: 30px;
-  text-decoration: none;
-  color: var(--cite-close);
-}
-.popup .close:hover {
-  color: var(--cite-hover);
-}
-.popup .content {
-  max-height: 70%;
-  overflow: auto;
-  font-size: 1em;
-}
-@media (min-width: 60rem) {
-  .cite-div {
-    margin-top: -2em;
-  }
-  .popup h5 {
-    padding: 15px;
-    font-size: 1.6em;
-  }
-  .popup .close {
-    top: 20px;
-  }
-  .popup .content {
-    font-size: 1em;
-  }
-}
-@media screen and (max-width: 700px) {
-  .popup {
-    width: 100%;
-  }
-}
-.left-cell {
-  font-size: 0.8em;
-  text-align: right;
-  color: grey;
-  vertical-align: top;
-}
-.right-cell {
-  font-size: 0.8em;
-  color: var(--p-up);
-}
 .social-icons-footer {
   font-size: 20px;
   align-items: center;

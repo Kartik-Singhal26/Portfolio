@@ -5,10 +5,6 @@ const citeTable1 = document.querySelector(".citeT1");
 const citeTable2 = document.querySelector(".citeT2");
 const citeTable3 = document.querySelector(".citeT3");
 const citeTable4 = document.querySelector(".citeT4");
-const citeTable5 = document.querySelector(".citeT5");
-const citeTable6 = document.querySelector(".citeT6");
-const citeTable7 = document.querySelector(".citeT7");
-const citeTable8 = document.querySelector(".citeT8");
 
 const research = [
     {
@@ -18,7 +14,8 @@ const research = [
         Status : "Publication Under Review",
         researchYr : 2020,
         citebox : "#popup1",
-        image : "assets/images/research-page/caif.png"
+        image : "assets/images/research-page/caif.png",
+        link: ""
     },
 
     {
@@ -28,7 +25,8 @@ const research = [
         Status : "Published",
         researchYr : 2020,
         citebox : "#popup2",
-        image : "assets/images/research-page/els.jpg"
+        image : "assets/images/research-page/els.jpg",
+        link : "https://www.sciencedirect.com/science/article/pii/B9780128213261000061?via%3Dihub"
     },
 
     {
@@ -38,7 +36,8 @@ const research = [
         Status : "Published",
         researchYr : 2020,
         citebox : "#popup3",
-        image : "assets/images/research-page/fuzzy.jpg"
+        image : "assets/images/research-page/fuzzy.jpg",
+        link : "https://www.taylorfrancis.com/chapters/fuzzy-systems-medicine-healthcare-deepak-sharma-sakshi-kartik-singhal/e/10.1201/9781003003496-8"
     },
 
     {
@@ -48,7 +47,8 @@ const research = [
         Status : "Published",
         researchYr : 2019,
         citebox : "#popup4",
-        image : "assets/images/research-page/model.png"
+        image : "assets/images/research-page/model.png",
+        link : "https://www.ijitee.org/wp-content/uploads/papers/v9i1/A9232119119.pdf"
     }
 ];
 
@@ -71,31 +71,11 @@ const cite4 = [{
     vancouver : "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu and Jie Zhou. A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking. The 58th Annual Meeting of the Association for Computational Linguistics 2020.",
     bibtex : "Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu and Jie Zhou. A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking. The 58th Annual Meeting of the Association for Computational Linguistics 2020."
 }];
-
-const cite5 = [{
-    vancouver : "Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi. Dual Super-Resolution Learning for Semantic Segmentation. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
-    bibtex : "Wang, Li and Li, Dong and Zhu, Yousong and Tian, Lu and Shan, Yi. Dual Super-Resolution Learning for Semantic Segmentation. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-}];
-
-const cite6 = [{
-    vancouver : "Zhang, Kai and Van Gool, Luc and Timofte, Radu. Deep Unfolding Network for Image Super-Resolution. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
-    bibtex : "Zhang, Kai and Van Gool, Luc and Timofte, Radu. Deep Unfolding Network for Image Super-Resolution. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-}];
-
-const cite7 = [{
-    vancouver : "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng. Unsupervised Learning for Intrinsic Image Decomposition From a Single Image. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
-    bibtex : "Liu, Yunfei and Li, Yu and You, Shaodi and Lu, Feng. Unsupervised Learning for Intrinsic Image Decomposition From a Single Image. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-}];
-
-const cite8 = [{
-    vancouver : "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song, Jingkuan. Forward and Backward Information Retention for Accurate Binary Neural Networks. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020.",
-    bibtex : "Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Shen, Mingzhu and Wei, Ziran and Yu, Fengwei and Song, Jingkuan. Forward and Backward Information Retention for Accurate Binary Neural Networks. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020."
-}];
     
 const fillData = () => {
     let output = "";
     research.forEach(
-        ({image, title, authors, conferences, Status, researchYr, citebox}) =>
+        ({image, title, authors, conferences, Status, researchYr, citebox, link}) =>
         (output +=`
             <tr> 
             <td class="imgCol"><img src="${image}" class="rImg"></td>
@@ -109,13 +89,11 @@ const fillData = () => {
             <!--CITE BUTTON-->
             <div class="d-flex justify-content-end" style="margin-right:5%;">
             
-            <a href="#" class="button button-accent button-small text-right button-abstract">ABSTRACT</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="${link}" class="button button-accent button-small text-right button-abstract" target="_blank">LINK</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="${citebox}" class="button button-accent button-small button-cite">CITE</a
-
             </div>
             </td>
             </tr>
-
             `)
         );
     researchTable.innerHTML = output;
@@ -177,59 +155,3 @@ const citeData4 = () => {
     citeTable4.innerHTML = output;
 };
 document.addEventListener("DOMContentLoaded", citeData4);
-
-const citeData5 = () => {
-    let output = "";
-    cite5.forEach(
-        ({vancouver, bibtex}) =>
-        (output += `
-        <tr> <td class="left-cell"> Vancouver </td> <td class="right-cell">${vancouver} </td></tr>
-                    <tr> <td class="left-cell"> BibTeX </td> <td class="right-cell"> ${bibtex}
-                    </td></tr>                     
-        `)
-    );
-    citeTable5.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", citeData5);
-
-const citeData6 = () => {
-    let output = "";
-    cite6.forEach(
-        ({vancouver, bibtex}) =>
-        (output += `
-        <tr> <td class="left-cell"> Vancouver </td> <td class="right-cell">${vancouver} </td></tr>
-                    <tr> <td class="left-cell"> BibTeX </td> <td class="right-cell"> ${bibtex}
-                    </td></tr>                     
-        `)
-    );
-    citeTable6.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", citeData6);
-
-const citeData7 = () => {
-    let output = "";
-    cite7.forEach(
-        ({vancouver, bibtex}) =>
-        (output += `
-        <tr> <td class="left-cell"> Vancouver </td> <td class="right-cell">${vancouver} </td></tr>
-                    <tr> <td class="left-cell"> BibTeX </td> <td class="right-cell"> ${bibtex}
-                    </td></tr>                     
-        `)
-    );
-    citeTable7.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", citeData7);
-
-const citeData8 = () => {
-    let output = "";
-    cite8.forEach(
-        ({vancouver, bibtex}) =>
-        (output += `
-        <tr> <td class="left-cell"> Vancouver </td> <td class="right-cell">${vancouver} </td></tr>
-                    <tr> <td class="left-cell"> BibTeX </td> <td class="right-cell"> ${bibtex}
-                    </td></tr>                     
-        `)
-    );
-    citeTable8.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", citeData8);

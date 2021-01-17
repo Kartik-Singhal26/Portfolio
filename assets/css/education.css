@@ -1,71 +1,67 @@
 /* Dark and Light theme */
 
-html[data-theme = 'light']
-{
+html[data-theme="light"] {
   --bg1-color: #ecf0f3;
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  --border:1px solid #ecf0f3;
+  --border: 1px solid #ecf0f3;
 }
 
-html[data-theme = 'dark']
-{
+html[data-theme="dark"] {
   --bg1-color: #272727;
   --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
-  --border:none;
+  --border: none;
 }
 
 /* -----Education Section CSS----- */
 
-.sect
-{
-    height: 140vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    object-fit: fill;
+.sect {
+  height: 140vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  object-fit: fill;
 }
 
-.s2
-{
-    overflow-x: hidden;
+.s2 {
+  overflow-x: hidden;
 }
 
-.s2 .head{
-  font-size:2rem;
+.s2 .head {
+  font-size: 2rem;
 }
 
-.s2 h4{
+.s2 h4 {
   margin-bottom: -0.3rem;
 }
 
-.qual{
+.qual {
   margin-bottom: 2rem;
 }
 
-.s2 p
-{
+.s2 p {
   margin-top: -0.5rem;
   font-weight: 450;
   font-size: 2.5vh;
 }
-.s2 .card img
-{
-    height: 90%;
-    width: 90%;
+.s2 .card img {
+  height: 90%;
+  width: 90%;
 }
-.s2 .card, .s2 img
-{
-    border-radius: 3rem;
+.s2 .card,
+.s2 img {
+  border-radius: 3rem;
 }
 
-.s2 h4,h6,p{
-  color:black;
+.s2 h4,
+h6,
+p {
+  color: black;
 }
 
 /* Card Hover Effect */
 
-.mooc-title{
+.mooc-title {
   color: black;
 }
 
@@ -140,18 +136,18 @@ html[data-theme = 'dark']
 }
 #mooc .card-body {
   background-color: #fff;
-  padding:1px;
+  padding: 1px;
 }
 
 /* Certificate Carousel  */
-#myCarousel{
+#myCarousel {
   text-align: center;
   margin-bottom: 6vh;
-  height:42vh;
+  height: 42vh;
   width: 52vh;
 }
 
-#myCarousel img{
+#myCarousel img {
   height: 42vh;
   width: 52vh;
 }

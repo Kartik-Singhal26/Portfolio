@@ -40,9 +40,8 @@ let header = $(`
         <li><a class="white-text" href="projects.html">Projects</a></li>
         <li><a class="white-text" href="research.html">Research</a></li>
         <li><a class="white-text" href="education.html">Education</a></li>
-        <li><a class="white-text" href="skill.html">Skills</a></li>
-        <li><a class="white-text" href="index.html">Blog</a></li>
-        <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
+        <li><a class="white-text" href="blog.html">Blog</a></li>
+        <li><a class="white-text" href="https://drive.google.com/file/d/1R7__w0DW8GSowEbDrUiHby2Z92NRCXAV/view?usp=sharing" target="_blank">My Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
           <label for="switch-1" class="theme-switch">
@@ -69,9 +68,8 @@ let header = $(`
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
-<li><a href="skill.html">Skills</a></li>
-<li><a href="index.html">Blog</a></li>
-<li><a href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="https://drive.google.com/file/d/1R7__w0DW8GSowEbDrUiHby2Z92NRCXAV/view?usp=sharing" target="_blank">My Resume</a></li>
 
 
 <!--TOGGLE FOR LIGHT/DARK MODE-->
@@ -97,7 +95,7 @@ let footer = $(`
   <div class="container">
     <div class="row">
       <div class="col-lg-7 col-md-6 pt-3" >
-      <div class="col-sm-12 col-md-10 ml-lg-4">
+      <div class="col-sm-12 col-md-10 ml-lg-5" style="margin-bottom: 6px">
         <a class="webintern-footer-logo col-12 d-none d-md-inline-block" href="#">
           <center><img src="assets/images/Kartik1.png"style="width: 220px;"/></center>
         </a>
@@ -108,18 +106,21 @@ let footer = $(`
     <!-- Social media icons for footer -->
 
 <div class="social-icons-footer mx-lg-auto" style="display:flex">
-  <a class="social-icon-footer twitter" href="" target="_blank" rel="author">
-    <i class="fab fa-twitter"></i>
+  <a class="social-icon-footer github" href="https://github.com/Kartik-Singhal26" target="_blank" rel="author">
+    <i class="fab fa-github"></i>
       </a>
-  <a class="social-icon-footer linkedin" href="" target="_blank" rel="author">
+  <a class="social-icon-footer linkedin" href="https://www.linkedin.com/in/kartik-singhal26/" target="_blank" rel="author">
     <i class="fab fa-linkedin-in"></i>
       </a>
-  <a class="social-icon-footer github" href="" target="_blank" rel="author">
-    <i class="fab fa-github"></i>
+  <a class="social-icon-footer google-scholar" href="https://scholar.google.com/citations?user=rBphoDsAAAAJ&hl=en" target="_blank" rel="author">
+    <i class="ai ai-google-scholar-square ai-3x"></i>
+      </a>
+  <a class="social-icon-footer twitter" href="https://twitter.com/KartikSinghal26?s=09" target="_blank" rel="author">
+    <i class="fab fa-twitter"></i>
       </a>
   </div>
 
-  <div class="col-10 text-center">
+  <div class="col-20 text-center">
   <p><a href=" " class="col-sm-12 text-white">kartiksinghal35@gmail.com</a></p>
   </div>
 
