@@ -14,7 +14,7 @@ const research = [
         Status : "Publication Under Review",
         researchYr : 2020,
         citebox : "#popup1",
-        image : "assets/images/research-page/caif.png",
+        image : "assets/images/research-page/caif.PNG",
         link: ""
     },
 
@@ -47,7 +47,7 @@ const research = [
         Status : "Published",
         researchYr : 2019,
         citebox : "#popup4",
-        image : "assets/images/research-page/model.png",
+        image : "assets/images/research-page/model.PNG",
         link : "https://www.ijitee.org/wp-content/uploads/papers/v9i1/A9232119119.pdf"
     }
 ];

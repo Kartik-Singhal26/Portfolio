@@ -9,7 +9,7 @@ const research = [
         conferences : "Journal of the Franklin Institute - Elsevier",
         Status : "Publication Under Review",
         researchYr : 2020,
-        image : "assets/images/research-page/caif.png",
+        image : "assets/images/research-page/caif.PNG",
         link: ""
     },
 
@@ -39,7 +39,7 @@ const research = [
         conferences : "International Conference on Innovative & Advanced Multidisciplinary Research, Singapore",
         Status : "Published",
         researchYr : 2019,
-        image : "assets/images/research-page/model.png",
+        image : "assets/images/research-page/model.PNG",
         link : "https://www.ijitee.org/wp-content/uploads/papers/v9i1/A9232119119.pdf"
     }
 ];
