@@ -204,7 +204,6 @@ p {
   background-color: #374151;
 }
 
-
 .toggle-button {
   transform: translate(11.75em, 1.75em);
   position: absolute;
@@ -250,7 +249,6 @@ p {
   transition: opacity 150ms, transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
 }
 
-
 .toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
   opacity: 0;
   transform: translate(3em, 2em) rotate(0deg);
@@ -280,7 +278,6 @@ p {
   transform: translate(12em, 2em) rotate(-15deg);
 }
 
-
 /*Transition for Toggle*/
 
 html.transition,
@@ -292,30 +289,33 @@ html.transition *:after {
 }
 
 /* About Section */
-#about .card{
+#about .card {
   background-color: var(--bg);
   color: var(--text-color);
-  transform: scale(.97);
+  transform: scale(0.97);
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-#mooc .card{
+#mooc .card {
   color: var(--text-color);
-  transform: scale(.97);
+  transform: scale(0.97);
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-#about .card i, #mooc .card i{
+#about .card i,
+#mooc .card i {
   color: white;
 }
 
-#about .card-img, #mooc .card-img{
+#about .card-img,
+#mooc .card-img {
   background-color: var(--bg-nav);
 }
 
-#about .card:hover, #mooc .card:hover{
+#about .card:hover,
+#mooc .card:hover {
   transform: scale(1.005);
   box-shadow: 0 10px 18px 2px #000;
 }
@@ -323,8 +323,8 @@ html.transition *:after {
 /*Footer*/
 
 .webintern-footer {
-  background-color: var(--bg-nav);
-  background-image: var(--bg-nav-img);
+  background-color: #000000;
+  background-image: #000000;
   padding: 20px;
 }
 
@@ -390,7 +390,8 @@ html.transition *:after {
   margin-top: 4px;
 }
 
-.contact-form #inputEmail, #inputName {
+.contact-form #inputEmail,
+#inputName {
   background-color: #fff;
   padding: 0.375rem 0.75rem;
   height: 2rem;
@@ -449,7 +450,8 @@ html.transition *:after {
   margin-top: 2px;
 }
 
-.contact-form #inputEmail, #inputName {
+.contact-form #inputEmail,
+#inputName {
   background-color: #fff;
   padding: 0.375rem 0.75rem;
   height: 2rem;
@@ -589,7 +591,7 @@ textarea#message {
 
 @media (min-width: 40rem) {
   .webintern-footer .webintern-footer-inner .simple-text p {
-    width: auto; 
+    width: auto;
   }
 }
 
@@ -606,19 +608,35 @@ textarea#message {
 /* wave-hand animation */
 
 .wave {
-  animation-name: wave-animation;  
-  animation-duration: 2.5s;      
-  animation-iteration-count: infinite;  
-  transform-origin: 70% 70%;     
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
 }
 @keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(14.0deg) }  
- 20% { transform: rotate(-8.0deg) }
- 30% { transform: rotate(14.0deg) }
- 40% { transform: rotate(-4.0deg) }
- 50% { transform: rotate(10.0deg) }
- 60% { transform: rotate( 0.0deg) }  
-100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
